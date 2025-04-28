@@ -31,7 +31,7 @@ an alarm as,
 
         all([alarm.misaligned_at_qs(qs, responses) for qs my_range()])
 
-2. The method `ntqr.SingleClassifierAxiomsAlarm.are_misaligned`
+2. The method `python.src.ntqr.SingleClassifierAxiomsAlarm.are_misaligned`
 is a test for fully unsupervised settings and is equivalent to,
 
         all([alarm.misaligned_at_qs((qa,Q-qa), rs) for qa in range(0,Q+1)])
@@ -66,8 +66,8 @@ by having three classifiers, as long as one of them is behaving correctly,
 from collections.abc import Sequence, Iterator
 import itertools
 
-import ntqr
-import ntqr.r2.raxioms, ntqr.r3.raxioms, ntqr.evaluations
+import python.src.ntqr
+import python.src.ntqr.r2.raxioms, python.src.ntqr.r3.raxioms, python.src.ntqr.evaluations
 
 
 class SingleClassifierAxiomsAlarm:
@@ -91,10 +91,10 @@ class SingleClassifierAxiomsAlarm:
         self,
         Q: int,
         classifiers_axioms: Sequence[
-            ntqr.r2.raxioms.SingleClassifierAxioms
-            | ntqr.r3.raxioms.SingleClassifierAxioms
+            python.src.ntqr.r2.raxioms.SingleClassifierAxioms
+            | python.src.ntqr.r3.raxioms.SingleClassifierAxioms
         ],
-        cls_single_evals: ntqr.evaluations.SingleClassifierEvaluations,
+        cls_single_evals: python.src.ntqr.evaluations.SingleClassifierEvaluations,
     ) -> None:
         """To initialize
 

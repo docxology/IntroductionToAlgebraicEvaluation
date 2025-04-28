@@ -1,0 +1,55 @@
+# NTQR Fork - Cursor Rules
+
+# Workspace Boundaries
+# -------------------
+# All development work must remain strictly within the fork/ directory
+# Do not modify any files outside the fork/ directory
+
+# Directory Structure Rules
+# ------------------------
+# Maintain the following structure:
+# - fork/src/ - For source code
+# - fork/tests/ - For test cases
+# - fork/docs/ - For documentation
+#   - fork/docs/analytical/ - For analytical considerations
+#   - fork/docs/operational/ - For operational guidelines
+
+# Code Style and Quality
+# ---------------------
+# - Write professional, functional, intelligent code
+# - Use clear, descriptive variable and function names
+# - Maintain proper documentation and comments
+# - Follow modular design principles
+# - Write tests for all new functionality
+# - Ensure compatibility with the main NTQR package
+
+# Integration with Main Package
+# ---------------------------
+# - Import from the main package using relative imports
+# - Run tests against both the main package and our extensions
+# - Document any differences in behavior from the main package
+
+# Documentation
+# ------------
+# - Document analytical findings in docs/analytical/
+# - Document operational considerations in docs/operational/
+# - Include usage examples for all new functionality
+# - Maintain a clear record of changes and improvements
+
+# Experimental Features
+# -------------------
+# - Clearly mark experimental features as such
+# - Isolate experimental code to prevent interference with stable code
+# - Document the purpose and limitations of experimental features
+
+# Version Control
+# -------------
+# - Use meaningful commit messages
+# - Group related changes in single commits
+# - Keep a clean commit history
+
+# Security and Data
+# ---------------
+# - Do not commit sensitive data or credentials
+# - Use environment variables for configuration
+# - Follow secure coding practices 

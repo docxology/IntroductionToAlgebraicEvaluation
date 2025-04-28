@@ -17,13 +17,13 @@ import sympy
 from fractions import Fraction
 from typing_extensions import Iterable
 
-from ntqr.r2.datasketches import Label, Votes
-from ntqr.r2.datasketches import (
+from python.src.ntqr.r2.datasketches import Label, Votes
+from python.src.ntqr.r2.datasketches import (
     classifier_label_votes,
     classifiers_labels_votes,
 )
-from ntqr.r2.datasketches import TrioLabelVoteCounts, TrioVoteCounts
-from ntqr.r2.examples import uciadult_label_counts
+from python.src.ntqr.r2.datasketches import TrioLabelVoteCounts, TrioVoteCounts
+from python.src.ntqr.r2.examples import uciadult_label_counts
 
 
 class SupervisedEvaluation:

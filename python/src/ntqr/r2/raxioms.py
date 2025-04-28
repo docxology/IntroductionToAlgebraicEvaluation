@@ -6,7 +6,7 @@ R=2 the evaluation of a single classifier/responder is (Q_a, R_a_a, R_b_b).
 """
 
 import sympy
-from ntqr.statistics import SingleClassifierVariables
+from python.src.ntqr.statistics import SingleClassifierVariables
 
 
 class SingleClassifierAxioms:

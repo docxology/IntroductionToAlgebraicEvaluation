@@ -1,6 +1,6 @@
-"""
-Module with classes that encapsulate the production of statistical variables
-for evaluation models.
+"""@author: Andrés Corrada-Emmanuel
+
+Symbols and variables used throughout the package.
 """
 
 from itertools import product
@@ -8,8 +8,8 @@ from types import MappingProxyType
 from typing_extensions import Iterable, Literal, Mapping, Sequence, Union
 
 import sympy
-
-import ntqr
+import inspect
+import python.src.ntqr
 
 
 class MClassifiersVariables:
@@ -32,7 +32,7 @@ class MClassifiersVariables:
 
     """
 
-    def __init__(self, labels: ntqr.Labels, classifiers: Sequence[str]):
+    def __init__(self, labels: python.src.ntqr.Labels, classifiers: Sequence[str]):
         """
 
 

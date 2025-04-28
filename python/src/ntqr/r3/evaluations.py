@@ -18,11 +18,13 @@ Misc variables:
 import itertools
 
 import sympy
-import ntqr.evaluations
+from typing import Sequence
+
+import python.src.ntqr.evaluations
 
 
 class SingleClassifierEvaluations(
-    ntqr.evaluations.SingleClassifierEvaluations
+    python.src.ntqr.evaluations.SingleClassifierEvaluations
 ):
     """
     Single classifier evaluations in (Q_a, Q_b, R_{b_i, a}, R_{a_i,b})

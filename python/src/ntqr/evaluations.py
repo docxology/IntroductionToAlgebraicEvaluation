@@ -12,12 +12,12 @@ from typing_extensions import Sequence, Mapping
 
 import sympy
 
-from ntqr import Labels
-from ntqr.testsketches import QuestionAlignedDecisions
-from ntqr.statistics import MClassifiersVariables
-from ntqr.raxioms import MAxiomsIdeal
-import ntqr.r2.raxioms
-import ntqr.r3.raxioms
+from python.src.ntqr import Labels
+from python.src.ntqr.testsketches import QuestionAlignedDecisions
+from python.src.ntqr.statistics import MClassifiersVariables
+from python.src.ntqr.raxioms import MAxiomsIdeal
+import python.src.ntqr.r2.raxioms
+import python.src.ntqr.r3.raxioms
 
 
 class AnswerKeyQSimplex:
@@ -402,8 +402,8 @@ class SingleClassifierEvaluations:
         self,
         Q: int,
         single_axioms: (
-            ntqr.r2.raxioms.SingleClassifierAxioms
-            | ntqr.r3.raxioms.SingleClassifierAxioms
+            python.src.ntqr.r2.raxioms.SingleClassifierAxioms
+            | python.src.ntqr.r3.raxioms.SingleClassifierAxioms
         ),
     ):
         self.Q = Q

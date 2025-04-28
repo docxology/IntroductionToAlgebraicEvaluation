@@ -15,19 +15,19 @@ __version__ = "0.5.1"
 from typing_extensions import Iterable, Sequence
 
 
-from ntqr.r2.examples import uciadult_label_counts
+from python.src.ntqr.r2.examples import uciadult_label_counts
 
-from ntqr.r2.datasketches import TrioLabelVoteCounts, TrioVoteCounts
+from python.src.ntqr.r2.datasketches import TrioLabelVoteCounts, TrioVoteCounts
 
-from ntqr.r2.evaluators import (
+from python.src.ntqr.r2.evaluators import (
     SupervisedEvaluation,
     ErrorIndependentEvaluation,
     MajorityVotingEvaluation,
 )
 
-# import ntqr.statistics
-# import ntqr.r2
-# import ntqr.r3
+# import python.src.ntqr.statistics
+# import python.src.ntqr.r2
+# import python.src.ntqr.r3
 
 
 class Label(str):

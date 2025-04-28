@@ -1,5 +1,5 @@
 """@author: Andrés Corrada-Emmanuel."""
-from ntqr.r2.datasketches import LabelVoteCounts
+from python.src.ntqr.r2.datasketches import LabelVoteCounts
 
 uciadult_label_counts: LabelVoteCounts = {
     "a": {

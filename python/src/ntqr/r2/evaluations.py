@@ -17,13 +17,14 @@ Misc variables:
 import itertools
 
 import sympy
+from typing import Sequence
 
-import ntqr.evaluations
-from ntqr.r2.datasketches import VoteCounts
+import python.src.ntqr.evaluations
+from python.src.ntqr.r2.datasketches import VoteCounts
 
 
 class SingleClassifierEvaluations(
-    ntqr.evaluations.SingleClassifierEvaluations
+    python.src.ntqr.evaluations.SingleClassifierEvaluations
 ):
     """
     Single classifier evaluations in (Q_a, Q_b, R_{b_i, a}, R_{a_i,b})

@@ -1,9 +1,11 @@
-# -*- coding: utf-8 -*-
-from typing import Self
-from typing_extensions import Collection, Mapping, Sequence
-from itertools import combinations, product
+"""@author: Andrés Corrada-Emmanuel"""
 
-from ntqr import Label, Labels, AlignedDecisions
+from collections.abc import Mapping, Collection, Sequence
+from typing_extensions import TypeVar, Generic, Self
+from itertools import combinations, product
+import numpy as np
+
+from python.src.ntqr import Label, Labels, AlignedDecisions
 
 
 class QuestionAlignedDecisions:

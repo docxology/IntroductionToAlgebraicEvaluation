@@ -5,9 +5,8 @@ from types import MappingProxyType
 from typing_extensions import Iterable, Literal, Mapping, Sequence, Union
 
 import sympy
-
-from ntqr import Labels
-from ntqr.statistics import MClassifiersVariables
+import python.src.ntqr
+from python.src.ntqr.statistics import MClassifiersVariables
 
 
 class MAxiomsIdeal:
@@ -40,7 +39,7 @@ class MAxiomsIdeal:
 
     def __init__(
         self,
-        labels: Labels,
+        labels: python.src.ntqr.Labels,
         classifiers: Sequence[str],
         m: int = 1,
     ):

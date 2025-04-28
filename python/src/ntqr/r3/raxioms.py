@@ -40,7 +40,7 @@ P_i_a_a = 1 - P_i_b_a - P_i_c_a
 """
 
 import sympy
-from ntqr.statistics import SingleClassifierVariables
+from python.src.ntqr.statistics import SingleClassifierVariables
 
 
 class SingleClassifierAxioms:
